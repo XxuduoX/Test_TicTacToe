@@ -1,0 +1,188 @@
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index:-1;
+}
+
+body{
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+h1{
+    font-size: 80px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 8px 4px rgba(234, 162, 5, 0.834);
+}
+
+:root {
+    --functionbar-width: 20%;
+}
+
+.Container{
+    border-radius: 20px;
+    width: 65vw;
+    height: 70vh;
+    background-color: white;
+    margin: auto;
+    display: grid;
+    grid-template-columns: var(--functionbar-width) 80%;
+    clear: both;
+    position: absolute;
+    top: 15%;
+    left: 17.5%;
+    box-shadow: 5px 10px 20px 10px rgba(11, 11, 11, 0.368);
+}
+.logo{
+    width: 10vw;
+}
+.functionBar{
+    padding-left: 10px;
+    background-color: aliceblue;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+}
+
+.displayMain{
+    background-color: rgb(139, 182, 182);
+
+}
+
+
+.gameBoard{
+    display: none;
+    margin: auto;
+    margin-top: 10%;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    align-content: center;
+}
+
+.cell{
+    width: 120px;
+    height: 120px;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.cell:first-child,:nth-child(2),:nth-child(3){
+    border-top: none;
+}
+
+.cell:last-child,:nth-child(7),:nth-child(8){
+    border-bottom: none;
+}
+.cell:nth-child(3n){
+    border-right: none;
+}
+.cell:nth-child(3n+1){
+    border-left: none;
+}
+
+.gameBoard.circle .cell:not(.cross):not(.circle):not(.circle):hover::after,.cell.circle::after{
+    content: '';
+    background-color: rgb(139, 182, 182);
+    height: 83px;
+    width: 83px;
+    border-radius: 50%;
+    position: absolute;
+
+}
+.gameBoard.circle .cell:not(.cross):not(.circle):not(.circle):hover::before,.cell.circle::before{
+    content: '';
+    background-color: #ffffff;
+    height: 97px;
+    width: 97px;
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+.gameBoard.cross .cell:not(.circle):not(.cross):not(.cross):hover::after,.cell.cross::after{
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    height: 97px;
+    width: 8px;
+    transform: rotate(-45deg);
+
+
+}
+
+.gameBoard.cross .cell:not(.circle):not(.cross):not(.cross):hover::before,.cell.cross::before{
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    height: 97px;
+    width: 8px;
+    transform: rotate(45deg);
+
+}
+.cell.circle,.cell.cross{
+    cursor: not-allowed;
+}
+
+.functionBar ul {
+    list-style: none;
+}
+.functionBar ul li {
+    width: 95%;
+    margin: 0 auto;
+    padding: 5px;
+    height: 30px;
+    font-size: 1rem;
+    background-color: #d1e1e1;
+}
+
+.functionBar ul li:hover {
+    color: #ffffff;
+    background-color: #f864a2;
+}
+
+.connectBtn:hover {
+    color: #ffd350;
+    background-color: #2752b0;
+}
+
+.createBtn:hover {
+    color: #ffd350;
+    background-color: #2752b0;
+}
+
+.joinBtn:hover {
+    color: #ffd350;
+    background-color: #2752b0;
+}
+.connectBtn,.createBtn,.joinBtn{
+    font-size: 25px;
+    border: 3px solid aliceblue;
+    background-color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.cls-3{
+    transform-box: fill-box;
+     transform-origin: center;
+ }
+ .cls-4{
+    transform-box: fill-box;
+     transform-origin: center;
+ }

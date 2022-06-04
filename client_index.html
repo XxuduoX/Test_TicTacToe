@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+
+    <div class="Container">
+        <div class="functionBar">
+            <div class="logo">
+                <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 434.55 216.28">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: url(#linear-gradient-6);
+                                stroke: url(#linear-gradient-7);
+                            }
+
+                            .cls-1,
+                            .cls-2,
+                            .cls-3,
+                            .cls-4,
+                            .cls-5,
+                            .cls-6 {
+                                stroke-miterlimit: 10;
+                            }
+
+                            .cls-1,
+                            .cls-2,
+                            .cls-4,
+                            .cls-5,
+                            .cls-6 {
+                                stroke-width: 8px;
+                            }
+
+                            .cls-2 {
+                                fill: url(#linear-gradient-10);
+                                stroke: url(#linear-gradient-11);
+                            }
+
+                            .cls-3 {
+                                fill: none;
+                                stroke: url(#linear-gradient-3);
+                                stroke-width: 21px;
+                            }
+
+                            .cls-4 {
+                                fill: url(#linear-gradient);
+                                stroke: url(#linear-gradient-2);
+                            }
+
+                            .cls-5 {
+                                fill: url(#linear-gradient-8);
+                                stroke: url(#linear-gradient-9);
+                            }
+
+                            .cls-6 {
+                                fill: url(#linear-gradient-4);
+                                stroke: url(#linear-gradient-5);
+                            }
+                        </style>
+                        <linearGradient id="linear-gradient" x1="72.13" y1="139.46" x2="209.32" y2="139.46"
+                            gradientTransform="translate(0 218) scale(1 -1)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fff" />
+                            <stop offset="0" stop-color="#f8f8f8" stop-opacity=".98" />
+                            <stop offset="0" stop-color="#0de6fe" />
+                            <stop offset=".97" stop-color="#fbb03b" stop-opacity=".5" />
+                        </linearGradient>
+                        <linearGradient id="linear-gradient-2" x1="68.13" y1="139.46" x2="213.32" y2="139.46"
+                            gradientTransform="translate(0 218) scale(1 -1)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fff" />
+                            <stop offset="0" stop-color="#f8f8f8" stop-opacity=".98" />
+                            <stop offset="0" stop-color="#0de6fe" />
+                            <stop offset=".97" stop-color="#fbb03b" stop-opacity=".5" />
+                        </linearGradient>
+                        <linearGradient id="linear-gradient-3" x1="233.97" y1="139.45" x2="391.07" y2="139.45"
+                            gradientTransform="translate(0 218) scale(1 -1)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fff" />
+                            <stop offset="0" stop-color="#f8f8f8" stop-opacity=".98" />
+                            <stop offset="0" stop-color="#0de6fe" />
+                            <stop offset=".97" stop-color="#fbb03b" stop-opacity=".5" />
+                        </linearGradient>
+                        <linearGradient id="linear-gradient-4" x1="59.84" y1="25.58" x2="366.29" y2="25.58"
+                            gradientTransform="translate(0 218) scale(1 -1)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fff" />
+                            <stop offset="0" stop-color="#f8f8f8" stop-opacity=".98" />
+                            <stop offset="0" stop-color="#0de6fe" />
+                            <stop offset=".97" stop-color="#fbb03b" stop-opacity=".5" />
+                        </linearGradient>
+                        <linearGradient id="linear-gradient-5" x1="55.84" y1="25.58" x2="370.29" y2="25.58"
+                            gradientTransform="translate(0 218) scale(1 -1)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fff" />
+                            <stop offset="0" stop-color="#f8f8f8" stop-opacity=".98" />
+                            <stop offset="0" stop-color="#0de6fe" />
+                            <stop offset=".97" stop-color="#fbb03b" stop-opacity=".5" />
+                        </linearGradient>
+                        <linearGradient id="linear-gradient-6" x1="392.37" y1="25.58" x2="430.55" y2="25.58"
+                            gradientTransform="translate(0 218) scale(1 -1)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fff" />
+                            <stop offset="0" stop-color="#f8f8f8" stop-opacity=".98" />
+                            <stop offset="0" stop-color="#0de6fe" />
+                            <stop offset=".97" stop-color="#fbb03b" stop-opacity=".5" />
+                        </linearGradient>
+                        <linearGradient id="linear-gradient-7" x1="388.37" y1="25.58" x2="434.54" y2="25.58"
+                            gradientTransform="translate(0 218) scale(1 -1)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fff" />
+                            <stop offset="0" stop-color="#f8f8f8" stop-opacity=".98" />
+                            <stop offset="0" stop-color="#0de6fe" />
+                            <stop offset=".97" stop-color="#fbb03b" stop-opacity=".5" />
+                        </linearGradient>
+                        <linearGradient id="linear-gradient-8" x1="378.39" y1="25.58" x2="380.27" y2="25.58"
+                            gradientTransform="translate(0 218) scale(1 -1)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fff" />
+                            <stop offset="0" stop-color="#f8f8f8" stop-opacity=".98" />
+                            <stop offset="0" stop-color="#0de6fe" />
+                            <stop offset=".97" stop-color="#fbb03b" stop-opacity=".5" />
+                        </linearGradient>
+                        <linearGradient id="linear-gradient-9" x1="374.39" y1="25.58" x2="384.27" y2="25.58"
+                            gradientTransform="translate(0 218) scale(1 -1)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fff" />
+                            <stop offset="0" stop-color="#f8f8f8" stop-opacity=".98" />
+                            <stop offset="0" stop-color="#0de6fe" />
+                            <stop offset=".97" stop-color="#fbb03b" stop-opacity=".5" />
+                        </linearGradient>
+                        <linearGradient id="linear-gradient-10" x1="4" y1="25.6" x2="47.75" y2="25.6"
+                            gradientTransform="translate(0 218) scale(1 -1)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fff" />
+                            <stop offset="0" stop-color="#f8f8f8" stop-opacity=".98" />
+                            <stop offset="0" stop-color="#0de6fe" />
+                            <stop offset=".97" stop-color="#fbb03b" stop-opacity=".5" />
+                        </linearGradient>
+                        <linearGradient id="linear-gradient-11" x1="0" y1="25.6" x2="51.75" y2="25.6"
+                            gradientTransform="translate(0 218) scale(1 -1)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fff" />
+                            <stop offset="0" stop-color="#f8f8f8" stop-opacity=".98" />
+                            <stop offset="0" stop-color="#0de6fe" />
+                            <stop offset=".97" stop-color="#fbb03b" stop-opacity=".5" />
+                        </linearGradient>
+                    </defs>
+                    <path class="cls-4"
+                        d="M206.42,30.59l-50.89,48.33,48.33,50.89c3.53,3.72,3.37,9.59-.34,13.13l-1.73,1.64c-3.72,3.52-9.59,3.37-13.12-.35l-48.33-50.89-50.9,48.34c-3.71,3.52-9.59,3.37-13.12-.35l-1.64-1.73c-3.53-3.71-3.38-9.59,.34-13.12l50.89-48.33L77.58,27.27c-3.52-3.72-3.37-9.59,.34-13.12l1.73-1.64c3.72-3.53,9.59-3.38,13.13,.34l48.33,50.89L192,15.41c3.72-3.53,9.59-3.38,13.12,.34l1.64,1.73c3.53,3.72,3.38,9.59-.34,13.12h0Z" />
+                    <circle class="cls-3" cx="312.52" cy="78.55" r="68.05" />
+                    <g>
+                        <rect class="cls-6" x="59.84" y="173.33" width="306.45" height="38.17" />
+                        <path class="cls-1"
+                            d="M392.37,173.33h25.96c6.74,0,12.22,5.47,12.22,12.22v13.98c0,6.61-5.37,11.98-11.98,11.98h-26.19v-38.17h0Z" />
+                        <rect class="cls-5" x="378.39" y="173.33" width="1.88" height="38.17" />
+                        <path class="cls-2"
+                            d="M47.75,192.41v19.84s-.03,.04-.05,.03l-21.86-9.93-21.83-9.92s-.03-.05,0-.07l21.83-9.92,21.86-9.93s.05,0,.05,.03v19.87Z" />
+                    </g>
+                </svg>
+            </div>
+            <button class="connectBtn" style="margin-top: 10px;margin-bottom: 10px;">Start</button>
+            <button class="createBtn" style="margin-top: 10px;margin-bottom: 10px;">Create Game</button>
+            <label for="" style="padding-bottom: 5px;margin-top: 10px;text-align: center;">Available Room</label>
+            <ul>
+                <li>No room available</li>
+            </ul>
+            <button class="joinBtn"style="margin-top: 20px;margin-bottom: 10px;">Join Game</button>
+
+        </div>
+        <div class="displayMain">
+            <div class="intro"><img style='height: 100%; width: 100%; object-fit: contain' src="/pic/intro.jpg" alt="Intro pic"></div>
+            <div class="gameBoard">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <video id="BGvideo" autoplay muted loop>
+        <source src="video/pexels-weldi-studio-design-8675554.mp4" type="video/mp4">
+    </video>
+    <script src="ClientScript.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        var circle = anime({
+            targets: '.cls-3',
+            rotate: 360,
+            easing: 'linear',
+            loop: true,
+            direction: 'reverse',
+        });
+        var cross = anime({
+            targets: '.cls-4',
+            rotate: 360,
+            easing: 'linear',
+            loop: true,
+            direction: 'reverse',
+        });
+    </script>
+
+</body>
+
+</html>

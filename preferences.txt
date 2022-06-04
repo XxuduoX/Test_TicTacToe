@@ -1,0 +1,4 @@
+- Design
+- Frontend (website design | html & css)
+- 2D character/assets design
+- backend
